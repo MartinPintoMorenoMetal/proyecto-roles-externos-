@@ -1,0 +1,130 @@
+.input-custom{  
+    border: 0;
+    border-bottom: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    border-radius:0;
+}
+
+.card-custom {
+    box-shadow: none;
+    border-radius: 0;
+}
+  
+.card-custom>.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-left:0;
+}
+
+.card-custom>.card-header>.card-title, 
+.card-custom>.card-header>.card-tools>.btn-tool>.fa-minus,
+.card-custom>.card-header>.card-tools>.btn-tool>.fa-plus {
+    color: #0665d0 !important;
+}
+
+.card-custom>.card-body {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* .dataTables_filter {
+    float: right !important;
+ } */
+
+.input-custom{  
+    border: 0;
+    border-bottom: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    border-radius:0;
+}
+
+.col-form-label{
+    font-weight: 500 !important;
+}
+
+form>.card-custom{
+    margin-bottom: 0 !important;
+}
+
+form>.card-custom>.card-header{
+    border-bottom: 0 !important;
+}
+form>.card-custom>.card-body{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.form-group{
+    margin-right: 10.5px !important;
+}
+
+.modal-header{
+    background-color: #0665d0;
+}
+
+table {
+    font-size: 15px;
+}
+
+table>thead>tr>th{
+    font-weight: 500 !important;
+}
+
+.badge {
+    font-size: 85%;
+}
+
+.input-group-text {
+    background-color: #e9ecef00;
+    border:none; 
+}
+
+.dropdown-item {
+    font-size: 13px;
+}
+
+.navbar-primary {
+    background-color: #0665d0;
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: #0665d0!important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #0665d0;
+    color: #fff;
+}
+
+.text-primary {
+    color: #0665d0 !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #0665d0;
+    border-color: #0665d0;
+}
+
+#error-message>ul{
+    padding-left: 17px;
+}
+
+.small-box {
+    border-radius: 0 !important;
+}
+
+.small-box>.inner {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.bg-gradient-primary{
+    background: #0665d0 linear-gradient(90deg,#0665d0,#208afb) repeat-x!important;
+    color: #fff;
+}
+
+.mr-04{
+    margin-right: 0.4rem;
+}
