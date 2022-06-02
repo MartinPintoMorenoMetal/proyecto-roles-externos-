@@ -5,7 +5,7 @@ class rol_externo_model  extends CI_Model {
 
 	public function getRolExternos(){
         //cambiarlo por la funcion 
-         $this->db->select("*");
+        $this->db->select("*");
         $this->db->from("rol_externo");
         $results=$this->db->get();
         return $results->result();
