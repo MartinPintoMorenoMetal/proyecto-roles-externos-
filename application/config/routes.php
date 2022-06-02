@@ -28,4 +28,9 @@ $route['editar_tipos_equipos/modificar/(:num)'] = 'amsa/tipos_equipos/update/$1'
 
 $route['eliminar_tipos_equipos/(:num)'] = 'amsa/tipos_equipos/delete/$1';
 
+$route['amsa/rol_externo/exito'] = 'amsa/tipos_equipos/delete/$1';
+
+
+
+
 
