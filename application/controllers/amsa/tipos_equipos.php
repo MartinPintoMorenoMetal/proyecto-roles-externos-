@@ -12,7 +12,7 @@ class tipos_equipos extends CI_Controller {
 
 	public function index()
 	{    
-		/*$data = array($this->comun_model->all_tipos_equipos('permisos.fn_listar_rol_externo',
+		/*$data = array($this->comun_model->all_tipos_equipos('permisos.fn_select_tipos_equipos',
 		[
 			"id_tipo_equipo_sec",
 			"cod_tipo_equipo",
@@ -51,7 +51,7 @@ class tipos_equipos extends CI_Controller {
         $des_tipo_equipo = $this->input->post('des_tipo_equipo');
         $gls_tipo_equipo = $this->input->post('gls_tipo_equipo');
 
-		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_insert_rol_externo',
+		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_insert_tipos_equipos',
 		$this->id_cliente,
 		$this->id_subcliente,
 		$this->id_pais,
@@ -74,7 +74,7 @@ class tipos_equipos extends CI_Controller {
 		null
 		)[0];
 		
-		$this->cargarVista('amsa/rol_externo/form', 'Mantener rol externo', [
+		$this->cargarVista('amsa/tipos_equipos/form', 'Mantener rol externo', [
             "modelo" => [
                 "id" => $modelo->id_tipo_equipo_sec ,
                 "cod_tipo_equipo"  => $modelo->cod_tipo_equipo,
@@ -102,7 +102,7 @@ class tipos_equipos extends CI_Controller {
         $gls_tipo_equipo = $this->input->post('gls_tipo_equipo');
 
 		
-		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_insert_rol_externo',
+		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_insert_tipos_equipos',
 		$this->id_cliente,
 		$this->id_subcliente,
 		$this->id_pais,
@@ -124,7 +124,7 @@ class tipos_equipos extends CI_Controller {
 		$this->id_pais,
 		$this->id_usuario);*/
 
-		//$this->cargarVista('amsa/rol_externo/exito', 'Mantener rol externo');
+		//$this->cargarVista('amsa/tipos_equipos/exito', 'Mantener rol externo');
 
 		// Esta acción se encargará de eliminar el recurso seleccionado.
         // Adicionalmente aquí es donde se debería imprimir una vista informando si se ha logrado o no eliminar el recurso.
