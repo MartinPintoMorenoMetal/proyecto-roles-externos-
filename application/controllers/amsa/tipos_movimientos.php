@@ -12,7 +12,7 @@ class tipos_movimientos extends CI_Controller {
 
 	public function index()
 	{    
-		/*$data = array($this->comun_model->all_tipos_movimientos('permisos.fn_listar_tipos_movimientos',
+		/*$data = array($this->comun_model->all_tipos_movimientos('planificacion.fn_listar_tipos_movimientos',
 		[
 			"id_tipo_movimiento",
 			"cod_tipo_movimiento",
@@ -52,7 +52,7 @@ class tipos_movimientos extends CI_Controller {
         $des_tipo_movimiento = $this->input->post('des_tipo_movimiento');
         $gls_tipo_movimiento = $this->input->post('gls_tipo_movimiento');
 
-		/*$this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_insert_tipos_movimientos',
+		/*$this->comun_model->ObtenerRegistrosDesdeFuncion('planificacion.fn_insert_tipos_movimientos',
 		$cod_tipo_movimiento,
         $this->id_cliente,
 		$this->id_subcliente,
@@ -103,7 +103,7 @@ class tipos_movimientos extends CI_Controller {
         $des_tipo_movimiento = $this->input->post('des_tipo_movimiento');
         $gls_tipo_movimiento = $this->input->post('gls_tipo_movimiento');
 
-		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('permisos.fn_update_tipos_movimientos',
+		/* $this->comun_model->ObtenerRegistrosDesdeFuncion('planificacion.fn_update_tipos_movimientos',
         $id,
         $cod_tipo_movimiento,
 		$this->id_cliente,
