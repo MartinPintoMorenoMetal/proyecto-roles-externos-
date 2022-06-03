@@ -30,6 +30,20 @@ $route['eliminar_tipos_equipos/(:num)'] = 'amsa/tipos_equipos/delete/$1';
 
 $route['amsa/tipos_equipos/exito'] = 'amsa/tipos_equipos/delete/$1';
 
+//--------------------------------TIPOS DE EQUIPOS-------------------------
+$route['tipos_movimientos'] = 'amsa/tipos_movimientos';
+
+$route['nuevo_tipos_movimientos'] = 'amsa/tipos_movimientos/new';
+$route['nuevo_tipos_movimientos/guardar'] = 'amsa/tipos_movimientos/create';
+
+$route['editar_tipos_movimientos/(:num)'] = 'amsa/tipos_movimientos/edit/$1';
+$route['editar_tipos_movimientos/modificar/(:num)'] = 'amsa/tipos_movimientos/update/$1';
+
+$route['eliminar_tipos_movimientos/(:num)'] = 'amsa/tipos_movimientos/delete/$1';
+
+$route['amsa/tipos_movimientos/exito'] = 'amsa/tipos_movimientos/delete/$1';
+
+
 
 
 

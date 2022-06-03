@@ -11,6 +11,16 @@ class comun_model  extends CI_Model {
         // 0 exito 
        
     }
+
+    public function all_tipos_movimientos(){
+
+        //$data = $this->db->query("SELECT planificacion.fn_listar_tipos_equipos(14,14,1,1,null);");
+        $data = $this->db->query("select * from tipos_movimientos");
+        return $data->result();
+        // 0 exito 
+       
+    }
    
 }
 ?>
+
