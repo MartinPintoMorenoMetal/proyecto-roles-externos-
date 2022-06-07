@@ -20,6 +20,15 @@ class comun_model  extends CI_Model {
         // 0 exito 
        
     }
+
+    public function all_perfiles_externos(){
+
+        //$data = $this->db->query("SELECT planificacion.fn_listar_tipos_equipos(14,14,1,1,null);");
+        $data = $this->db->query("select * from perfil_externo");
+        return $data->result();
+        // 0 exito 
+       
+    }
    
 }
 ?>

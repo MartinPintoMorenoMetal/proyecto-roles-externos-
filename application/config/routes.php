@@ -30,7 +30,7 @@ $route['eliminar_tipos_equipos/(:num)'] = 'amsa/tipos_equipos/delete/$1';
 
 $route['amsa/tipos_equipos/exito'] = 'amsa/tipos_equipos/delete/$1';
 
-//--------------------------------TIPOS DE EQUIPOS-------------------------
+//--------------------------------TIPOS DE MOVIMIENTOS-------------------------
 $route['tipos_movimientos'] = 'amsa/tipos_movimientos';
 
 $route['nuevo_tipos_movimientos'] = 'amsa/tipos_movimientos/new';
@@ -42,6 +42,25 @@ $route['editar_tipos_movimientos/modificar/(:num)'] = 'amsa/tipos_movimientos/up
 $route['eliminar_tipos_movimientos/(:num)'] = 'amsa/tipos_movimientos/delete/$1';
 
 $route['amsa/tipos_movimientos/exito'] = 'amsa/tipos_movimientos/delete/$1';
+
+//--------------------------------PERFILES EXTERNOS-------------------------
+
+$route['perfiles_externos'] = 'amsa/perfiles_externos';
+
+$route['nuevo_perfiles_externos'] = 'amsa/perfiles_externos/new';
+$route['nuevo_perfiles_externos/guardar'] = 'amsa/perfiles_externos/create';
+
+$route['editar_perfiles_externos/(:num)'] = 'amsa/perfiles_externos/edit/$1';
+$route['editar_perfiles_externos/modificar/(:num)'] = 'amsa/perfiles_externos/update/$1';
+
+$route['eliminar_perfiles_externos/(:num)'] = 'amsa/perfiles_externos/delete/$1';
+
+$route['amsa/perfiles_externos/exito'] = 'amsa/perfiles_externos/delete/$1';
+
+
+
+
+
 
 
 
