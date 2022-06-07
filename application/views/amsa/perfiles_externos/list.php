@@ -38,7 +38,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th nowrap>Cod. Perfil Externo </th>
-                                    <th nowrap>Desc. Perfil Externo</th>
+                                    <th nowrap>Nom. Perfil Externo</th>
                                     <th nowrap>Gls Perfil Externo</th>
                                     <th nowrap>Activo</th>
                                     <th>Edit</th>
