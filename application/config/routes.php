@@ -57,6 +57,24 @@ $route['eliminar_perfiles_externos/(:num)'] = 'amsa/perfiles_externos/delete/$1'
 
 $route['amsa/perfiles_externos/exito'] = 'amsa/perfiles_externos/delete/$1';
 
+//--------------------------------usuarios externos-------------------------
+
+$route['usuarios_externos'] = 'amsa/usuarios_externos';
+
+$route['nuevo_usuarios_externos'] = 'amsa/usuarios_externos/new';
+$route['nuevo_usuarios_externos/guardar'] = 'amsa/usuarios_externos/create';
+
+$route['editar_usuarios_externos/(:num)'] = 'amsa/usuarios_externos/edit/$1';
+$route['editar_usuarios_externos/modificar/(:num)'] = 'amsa/usuarios_externos/update/$1';
+
+$route['eliminar_usuarios_externos/(:num)'] = 'amsa/usuarios_externos/delete/$1';
+
+$route['amsa/usuarios_externos/exito'] = 'amsa/usuarios_externos/delete/$1';
+
+
+
+
+
 
 
 
