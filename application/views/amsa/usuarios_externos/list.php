@@ -61,7 +61,7 @@
                                     <td><?php echo $date->nom_perfil_externo; ?></td>
                                     <td><?php echo $date->nom_rol_externo; ?></td>
                                     <td><?php  if ($date->nom_empresa_externa == '' ){ ?>
-                                        no posee empresa externa 
+                                        no posee empresa externa este usuario
                                     <?php }else{ ?>
                                         <?php echo $date->nom_empresa_externa; ?>
                                     <?php } ?> </td>
