@@ -102,10 +102,12 @@ class usuarios_externos extends CI_Controller {
 			"id_ident" => "",
 			"tip_ident" => "",
 			"status_usuario" => "",
+			"fec_fin"=> "",
 			"email" => "",
 			"celular" => "",
 			"username" => "",
 			"clave" => "",
+			
 		);
 
 		$data['perfiles_externos'] =  $this->comun_model->all_perfiles_externos();
@@ -170,7 +172,7 @@ class usuarios_externos extends CI_Controller {
 		)[0];
 
 
-		/*$data['perfiles_externos'] = $this->comun_model->ObtenerTablaDesdeFuncion('permisos.fn_listar_perfil_externo',
+		$data['perfiles_externos'] = $this->comun_model->ObtenerTablaDesdeFuncion('permisos.fn_listar_perfil_externo',
 		[
 			"sec_perfil_externo",
 			"nom_perfil_externo"
@@ -233,6 +235,7 @@ class usuarios_externos extends CI_Controller {
 				"id_ident" => $modelo->id_ident,
 				"tip_ident" => $modelo->tip_ident,
 				"status_usuario" => $modelo->status_usuario,
+				"fec_fin" => $modelo->fec_fin,
 				"email" => $modelo->email,
 				"celular" => $modelo->celular,
 				"username" => $modelo->username,
@@ -250,6 +253,7 @@ class usuarios_externos extends CI_Controller {
 			"lastname_usu" => "prueba",
 			"id_ident" => "prueba",
 			"tip_ident" => "prueba",
+			"fec_fin"=> "2018-12-31",
 			"status_usuario" => 35,
 			"email" => "prueba@hotmail.com",
 			"celular" => "prueba",
@@ -284,8 +288,7 @@ class usuarios_externos extends CI_Controller {
         $tip_ident = $this->input->post('tip_ident');
         $status_usuario = $this->input->post('status_usuario');
 
-		//fecha de fin vigencia del usuario '01-01-3000' 
-		$fec_fin = '01/01/3000';
+		$fec_fin = $this->input->post('fec_fin');
 
         $email = $this->input->post('email');
         $celular = $this->input->post('celular');
