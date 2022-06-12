@@ -38,7 +38,6 @@
                         <table class="table table-striped table-hover" id="datatable">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
                                     <th nowrap>Nom. Usuario</th>
                                     <th nowrap>Celular</th>
                                     <th nowrap>Email</th>
@@ -56,7 +55,6 @@
                                 <?php  foreach ($data as $date){?>
                                 <tr>
                                     
-                                    <td><?php echo $date->id_usuario_externo; ?></td>
                                     <td><?php echo $date->nom_usuario; ?></td>
                                     <td><?php echo $date->celular; ?></td>
                                     <td><?php echo $date->email; ?></td>

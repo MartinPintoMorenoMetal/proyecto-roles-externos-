@@ -20,8 +20,9 @@ class usuarios_externos extends CI_Controller {
 			"email",
 			"nom_perfil_externo",
 			"nom_rol_externo",
-			"nombre_proveedor",
-			"nom_status"
+			"id_empresa_externa",
+			"status_usuario"
+			
 		],
 		$this->id_cliente,
 		$this->id_subcliente,
@@ -282,6 +283,10 @@ class usuarios_externos extends CI_Controller {
         $id_ident = $this->input->post('id_ident');
         $tip_ident = $this->input->post('tip_ident');
         $status_usuario = $this->input->post('status_usuario');
+
+		//fecha de fin vigencia del usuario '01-01-3000' 
+		$fec_fin = '01/01/3000';
+
         $email = $this->input->post('email');
         $celular = $this->input->post('celular');
         $username = $this->input->post('username');
@@ -302,6 +307,7 @@ class usuarios_externos extends CI_Controller {
 			$id_ident,
 			$tip_ident,
 			$status_usuario,
+			$fec_fin,
 			$email,
 			$celular,
 			$username,
