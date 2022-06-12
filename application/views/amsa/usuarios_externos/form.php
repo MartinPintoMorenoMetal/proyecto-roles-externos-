@@ -147,12 +147,25 @@
                             </div>
                         </div>
 
-                       
+
+
+                        <?php if($id != ""){?>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Fecha De Fin Vigencia Del Usuario</label>
+                                    <input type="date" name="fec_fin" value="<?php echo $fec_fin?>"
+                                        class="form-control" placeholder="Fecha De Fin Vigencia Del Usuario">
+                                </div>
+                            </div>
+                        <?php }?>
+
+
+
                         <div class="col-xs-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Estatus del Usuario Externo</label>
+                                <label for="exampleInputEmail1"> Estatus del Usuario Externo </label>
                                 <select name="status_usuario"  class="form-control" >
-                                <option value=""> Seleccione Estatus Del Usuario Externo</option>
+                                <option value=""> Seleccione Estatus del Usuario Externo</option>
                                 <?php  foreach ($status_usuarios as $status_usuario){?>
                                     <option value="<?php echo $status_usuario->id_status ; ?>"
                                     <?php if ($status_usuario ==  $status_usuario->id_status  ) {?>
@@ -163,6 +176,7 @@
                                 </select>
                             </div>
                         </div>
+
 
                         <div class="col-xs-6">
                             <div class="form-group">

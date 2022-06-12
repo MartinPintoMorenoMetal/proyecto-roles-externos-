@@ -287,9 +287,8 @@ class usuarios_externos extends CI_Controller {
         $id_ident = $this->input->post('id_ident');
         $tip_ident = $this->input->post('tip_ident');
         $status_usuario = $this->input->post('status_usuario');
-
+		//fecha de fin vigencia del usuario '01-01-3000' 
 		$fec_fin = $this->input->post('fec_fin');
-
         $email = $this->input->post('email');
         $celular = $this->input->post('celular');
         $username = $this->input->post('username');
