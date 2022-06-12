@@ -20,8 +20,8 @@ class usuarios_externos extends CI_Controller {
 			"email",
 			"nom_perfil_externo",
 			"nom_rol_externo",
-			"id_empresa_externa",
-			"status_usuario"
+			"nom_empresa_externa",
+			"nom_status"
 			
 		],
 		$this->id_cliente,

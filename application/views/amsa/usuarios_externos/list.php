@@ -60,10 +60,10 @@
                                     <td><?php echo $date->email; ?></td>
                                     <td><?php echo $date->nom_perfil_externo; ?></td>
                                     <td><?php echo $date->nom_rol_externo; ?></td>
-                                    <td><?php  if ($date->nombre_proveedor == '' ){ ?>
+                                    <td><?php  if ($date->nom_empresa_externa == '' ){ ?>
                                         no posee empresa externa 
                                     <?php }else{ ?>
-                                        <?php echo $date->nombre_proveedor; ?>
+                                        <?php echo $date->nom_empresa_externa; ?>
                                     <?php } ?> </td>
 
                                     <td><?php echo $date->nom_status; ?></td>

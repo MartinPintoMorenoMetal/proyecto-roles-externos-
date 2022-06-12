@@ -49,7 +49,8 @@ class comun_model  extends CI_Model {
 
     public function all_usuarios_externos(){
 
-        $data = $this->db->query("select  * ,usex.email as email from usuarios_externos usex 
+        $data = $this->db->query("select  * ,usex.email as email, empext.nombre_proveedor as  nom_empresa_externa
+        from usuarios_externos usex 
         left join perfil_externo perex on ( perex.sec_perfil_externo = usex.id_perfil_externo)
         left join rol_externo rolex on ( rolex.sec_rol_externo = usex.id_rol_externo)
         left join empresa_externa empext on ( empext.id_transportista = usex.id_empresa_externa)
