@@ -36,7 +36,6 @@
                         <table class="table table-striped table-hover" id="datatable">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
                                     <th nowrap>Cod. Turno </th>
                                     <th nowrap>Nom. Turno</th>
                                     <th nowrap>Gls Turno</th>
@@ -48,7 +47,6 @@
                                 <?php  foreach ($data as $perfil_externo){?>
                                 <tr>
 
-                                    <td><?php echo $perfil_externo->id_turnos_sec ; ?></td>
                                     <td><?php echo $perfil_externo->cod_turno; ?></td>
                                     <td><?php echo $perfil_externo->des_turno; ?></td>
                                     <td><?php echo $perfil_externo->gls_turno; ?></td>
