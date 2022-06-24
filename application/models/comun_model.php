@@ -60,6 +60,23 @@ class comun_model  extends CI_Model {
         // 0 exito 
        
     }
+
+    public function all_ser_sum_estr(){
+
+       
+        $data = $this->db->query("select  * from servicios_suministros_estrategicos");
+        
+        return $data->result();
+        // 0 exito 
+       
+    }
+
+    public function all_turnos(){
+
+        $data = $this->db->query("select * from turnos");
+        return $data->result();
+       
+    }
    
 }
 ?>

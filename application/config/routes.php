@@ -71,9 +71,23 @@ $route['eliminar_usuarios_externos/(:num)'] = 'amsa/usuarios_externos/delete/$1'
 
 $route['amsa/usuarios_externos/exito'] = 'amsa/usuarios_externos/delete/$1';
 
+//--------------------------------servicios_suministros_estrategicos-------------------------
 
+$route['servicios_suministros_estrategicos'] = 'amsa/servicios_suministros_estrategicos';
 
+//--------------------------------turnos-------------------------
 
+$route['turnos'] = 'amsa/turnos';
+
+$route['nuevo_turnos'] = 'amsa/turnos/new';
+$route['nuevo_turnos/guardar'] = 'amsa/turnos/create';
+
+$route['editar_turnos/(:num)'] = 'amsa/turnos/edit/$1';
+$route['editar_turnos/modificar/(:num)'] = 'amsa/turnos/update/$1';
+
+$route['eliminar_turnos/(:num)'] = 'amsa/turnos/delete/$1';
+
+$route['amsa/turnos/exito'] = 'amsa/turnos/delete/$1';
 
 
 
